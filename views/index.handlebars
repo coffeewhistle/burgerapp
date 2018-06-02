@@ -1,6 +1,6 @@
 <h1>burgers!</h1>
 
-<h2>burgers that are not sleepy!</h2>
+<h2>burgers that are not devoured!</h2>
 
 <ul>
   {{#each burgers}}
@@ -10,12 +10,12 @@
   {{/each}}
 </ul>
 
-<h2>burgers that are sleepy!</h2>
+<h2>burgers that are devoured!</h2>
 
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      {{> burgers/burger-block sleep=false}}
+      {{> burgers/burger-block devoured=false}}
     {{/if}}
   {{/each}}
 </ul>
