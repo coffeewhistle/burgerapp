@@ -1,21 +1,21 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
 
-// var connection = mysql.createConnection({
-//   host: "nuskkyrsgmn5rw8c.cbetxkdyhwsb.us-east-1.rds.amazonaws.com" || "localhost",
-//   port: 3306,
-//   user: "uloqvtuz43yzq9uf" || "test",
-//   password: "a2c52zlyx7ldlyme" || "password",
-//   database: "gfdo64lp1kxdilii" || "burger_db"
-// });
-
 var connection = mysql.createConnection({
-  host: "localhost",
+  host: "nuskkyrsgmn5rw8c.cbetxkdyhwsb.us-east-1.rds.amazonaws.com" || "localhost",
   port: 3306,
-  user: "test",
-  password: "password",
-  database: "burger_db"
+  user: "uloqvtuz43yzq9uf" || "test",
+  password: "a2c52zlyx7ldlyme" || "password",
+  database: "gfdo64lp1kxdilii" || "burger_db"
 });
+
+// var connection = mysql.createConnection({
+//   host: "localhost",
+//   port: 3306,
+//   user: "test",
+//   password: "password",
+//   database: "burger_db"
+// });
 
 // Make connection.
 connection.connect(function(err) {
